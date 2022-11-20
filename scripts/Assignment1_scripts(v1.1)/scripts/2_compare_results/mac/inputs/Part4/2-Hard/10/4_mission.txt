@@ -1,0 +1,1 @@
+L4,U3,L1,U4,L1,U4,L4,U3,L2,U2	//mission vector for the hauler 1

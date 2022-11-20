@@ -1,0 +1,12 @@
+1	//Number of haulers
+2	//Number of LPs
+2	//Number of ULPs
+10	//Number of SOs
+1	//Number of charging stations
+[9,1]	//Initial position of the haulers
+[10,12]-[5,5]	//Position of the LPs in lexicograpical order
+[2,9]-[5,8]	//Position of the ULPs in the lexicographical order
+[12,9]-[3,1]-[5,2]-[10,2]-[12,8]-[9,6]-[2,8]-[9,5]-[1,2]-[6,5]	//Position of the SOs in the lexicographical order
+[7,7]	//Position of the charging station
+3810	//Maximum capacity of the hauler's battery
+2820	//Initial stored energy in the hauler's battery
