@@ -18,6 +18,8 @@ public:
     int64_t elapsedTime;
     std::string path;
 
+    bool complete = false;
+
     void setMissionFileName(std::string pFilename);
     void setOutputFileName(std::string pFilename);
 

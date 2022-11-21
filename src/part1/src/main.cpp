@@ -3,11 +3,13 @@
 
 #include "../inc/siteconfiguration.h"
 #include "../inc/mission.h"
+#include "../inc/graph.h"
 
 int main()
 {
     SiteConfiguration site;
     Mission mission;
+
     /*
     Replace your input files location and name.
 
@@ -34,16 +36,26 @@ int main()
                                      path to the final points, output file name
                         -> output: void
     */
-    site.setFileName("../../examples/config.txt");
+    std::string inputFolder = "../../examples/";
+    std::string fileIdentifier = "";
+
+    site.setFileName(inputFolder + fileIdentifier + "config.txt");
     site.readConfig();
 
-    mission.setMissionFileName("../../examples/mission.txt");
-    mission.setOutputFileName("../../examples/output2.txt");
+    mission.setMissionFileName(inputFolder + fileIdentifier + "mission.txt");
+    mission.setOutputFileName(inputFolder + fileIdentifier + "output2.txt");
     mission.readMission();
 
     auto tstart = std::chrono::high_resolution_clock::now();
     // ------------------------
     // Place your code here!
+    while(!mission.complete) {
+        mission.complete = true;
+    }
+
+    Graph graph;
+
+    graph.print();
 
     std::cout << "SO : " << site.n_SO << "\n";
 
