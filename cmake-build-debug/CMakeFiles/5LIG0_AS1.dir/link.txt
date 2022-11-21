@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/5LIG0_AS1.dir/src/part1/src/main.cpp.o CMakeFiles/5LIG0_AS1.dir/src/part1/src/mission.cpp.o CMakeFiles/5LIG0_AS1.dir/src/part1/src/siteconfiguration.cpp.o -o 5LIG0_AS1 

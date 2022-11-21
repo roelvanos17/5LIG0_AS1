@@ -1,0 +1,7 @@
+//Quantitative values
+200	//Makespan
+10	//Mission completion time hauler 1
+15	//Mission completion time hauler 2
+0	//Application execution time (in millisecond)
+//Path to the final points
+U1koek
