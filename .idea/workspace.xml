@@ -21,19 +21,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d417ec6a-3472-4bc9-96c0-c435c2574910" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/part1/inc/dijkstra.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/inc/hauler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1/src/dijkstra.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/5LIG0_AS1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/5LIG0_AS1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checks/Assignment1_sanity_check/sanity_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/checks/Assignment1_sanity_check/sanity_check.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/5LIG0_AS1.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/5LIG0_AS1.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/5LIG0_AS1.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/5LIG0_AS1.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Part1/0-Easy/10/1_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Part1/0-Easy/10/1_config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Part1/0-Easy/10/1_mission.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Part1/0-Easy/10/1_mission.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Part1/0-Easy/10/2_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Part1/0-Easy/10/2_config.txt" afterDir="false" />
@@ -4255,13 +4249,12 @@
       <change beforePath="$PROJECT_DIR$/scripts/2_compare_results/windows/runme.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/2_compare_results/windows/runme.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/2_compare_results/windows/sanity_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/2_compare_results/windows/sanity_check.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/2_compare_results/windows/write_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/2_compare_results/windows/write_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/inc/dijkstra.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/inc/dijkstra.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part1/inc/graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/inc/graph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/inc/mission.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/inc/mission.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/inc/siteconfiguration.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/inc/siteconfiguration.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part1/main" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/src/dijkstra.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/src/dijkstra.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part1/src/graph.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/src/graph.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part1/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/src/mission.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/src/mission.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part1/src/siteconfiguration.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/src/siteconfiguration.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Assignment1_code_template/C++/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Assignment1_code_template/C++/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Assignment1_code_template/C++/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Assignment1_code_template/C++/.idea/misc.xml" afterDir="false" />
@@ -4387,7 +4380,7 @@
       <workItem from="1669200349070" duration="5201000" />
       <workItem from="1669370190313" duration="7000" />
       <workItem from="1669370501889" duration="4000" />
-      <workItem from="1669370819690" duration="8242000" />
+      <workItem from="1669370819690" duration="13477000" />
     </task>
     <servers />
   </component>

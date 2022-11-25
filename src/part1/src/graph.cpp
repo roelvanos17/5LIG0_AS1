@@ -55,6 +55,6 @@ std::pair<unsigned int, unsigned int> Graph::toCoordinates(int pVertexNumber) {
     return {row, col};
 }
 
-int Graph::toVertexNumber(int pRow, int pCol) {
+unsigned int Graph::toVertexNumber(unsigned int pRow, unsigned int pCol) {
     return pRow * gridWidth + pCol;
 }

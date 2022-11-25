@@ -15,17 +15,18 @@ public:
     void printPath(unsigned int goalVertex);
     void run(unsigned int pStartPosition, unsigned int pGoal);
     void reset();
+    std::vector<int> totalPath;
 
 private:
     int getClosestVertex();
-    int shortestDistance;
+    unsigned int shortestDistance;
     void updateDistances(unsigned int pClosestVertex);
     Graph graph;
     std::vector<unsigned int> distance;
-    std::vector<int> path;
     std::vector<bool> visitedVertex;
     void printNextStep(int vertexNumber);
     unsigned int startPosition{};
+    std::vector<int> origin;
 };
 
 

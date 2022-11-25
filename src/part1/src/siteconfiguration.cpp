@@ -2,6 +2,7 @@
 // Created by roelv on 21/11/2022.
 //
 
+#include <iostream>
 #include "../inc/siteconfiguration.h"
 
 void SiteConfiguration::setFileName(std::string pFilename) {
@@ -171,17 +172,15 @@ std::pair<unsigned int, unsigned int> SiteConfiguration::getPointCoordinates(poi
             row = init_haulers[pPointNumber - 1].first;
             col = init_haulers[pPointNumber - 1].second;
             return {row, col};
-            break;
         case UNLOADING:
             row = ULP_positions[pPointNumber - 1].first;
             col = ULP_positions[pPointNumber - 1].second;
             return {row, col};
-            break;
         case LOADING:
             row = LP_positions[pPointNumber - 1].first;
             col = LP_positions[pPointNumber - 1].second;
             return {row, col};
-            break;
+        default:
+            return {0, 0};
     }
-
 }

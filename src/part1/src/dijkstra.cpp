@@ -9,20 +9,23 @@ Dijkstra::Dijkstra(Graph pGraph) {
     graph = pGraph;
     visitedVertex = std::vector<bool>(Graph::nVertices);
     distance = std::vector<unsigned int>(Graph::nVertices);
-    path = std::vector<int>(Graph::nVertices);
+    origin = std::vector<int>(Graph::nVertices);
+    totalPath.insert(totalPath.end(), 0);
 }
 
 void Dijkstra::reset() {
     for (int i = 0; i < Graph::nVertices; i++) {
         visitedVertex[i] = false;
 
-        if(i != startPosition){
+        if((unsigned) i != startPosition){
             distance[i] = INT32_MAX;
         } else {
             distance[i] = 0;
-            path[i] = -1;
+            origin[i] = -1;
         }
     }
+
+    totalPath.pop_back();
 }
 
 void Dijkstra::run(unsigned int pStartPosition, unsigned int pGoal) {
@@ -58,7 +61,7 @@ int Dijkstra::getClosestVertex() {
 void Dijkstra::updateDistances(unsigned int pClosestVertex) {
     for (int i = 0; i < Graph::nVertices; i++) {
         if(graph.adjacencyMatrix[pClosestVertex][i] && (shortestDistance + 1 < distance[i])) {
-            path[i] = pClosestVertex;
+            origin[i] = pClosestVertex;
             distance[i] = shortestDistance + 1;
         }
     }
@@ -74,12 +77,10 @@ void Dijkstra::printPath(unsigned int goalVertex) {
 
 
 void Dijkstra::printNextStep(int pVertexNumber) {
-    /**
-     * TODO: Remove
-     */
     if (pVertexNumber == -1) {
         return;
     }
-    printNextStep(path[pVertexNumber]);
+    printNextStep(origin[pVertexNumber]);
     std::cout << pVertexNumber << " ";
+    totalPath.insert(totalPath.end(), pVertexNumber);
 }
