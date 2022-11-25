@@ -161,3 +161,27 @@ void SiteConfiguration::readConfig() {
 
     file.close();
 }
+
+std::pair<unsigned int, unsigned int> SiteConfiguration::getPointCoordinates(pointType type, int pPointNumber) {
+    unsigned int row;
+    unsigned int col;
+
+    switch (type) {
+        case START:
+            row = init_haulers[pPointNumber - 1].first;
+            col = init_haulers[pPointNumber - 1].second;
+            return {row, col};
+            break;
+        case UNLOADING:
+            row = ULP_positions[pPointNumber - 1].first;
+            col = ULP_positions[pPointNumber - 1].second;
+            return {row, col};
+            break;
+        case LOADING:
+            row = LP_positions[pPointNumber - 1].first;
+            col = LP_positions[pPointNumber - 1].second;
+            return {row, col};
+            break;
+    }
+
+}

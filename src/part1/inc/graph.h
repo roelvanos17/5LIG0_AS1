@@ -4,6 +4,7 @@
 
 #ifndef INC_5LIG0_AS1_GRAPH_H
 #define INC_5LIG0_AS1_GRAPH_H
+#include <vector>
 
 
 class Graph {
@@ -12,11 +13,12 @@ public:
     Graph();
     void print();
     void removeVertex(int pCol, int pRow);
-
-private:
-    static const int gridWidth = 3;
+    static const int gridWidth = 12;
     static const int nVertices = gridWidth * gridWidth;
     bool adjacencyMatrix[nVertices][nVertices]{};
+    std::pair<unsigned int, unsigned int> toCoordinates(int pVertexNumber);
+    int toVertexNumber(int pRow, int pCol);
+
 };
 
 

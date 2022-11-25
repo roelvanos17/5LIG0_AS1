@@ -8,6 +8,11 @@
 #ifndef INC_5LIG0_AS1_SITECONFIGURATION_H
 #define INC_5LIG0_AS1_SITECONFIGURATION_H
 
+enum pointType {
+    START,
+    UNLOADING,
+    LOADING,
+};
 
 class SiteConfiguration {
 public:
@@ -27,8 +32,12 @@ public:
     void setFileName(std::string pFilename);
     void readConfig();
 
+    std::pair<unsigned int, unsigned int> getPointCoordinates(pointType type, int pPointNumber);
+
+
 private:
     std::string fileName;
+
 };
 
 

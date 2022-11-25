@@ -9,6 +9,7 @@
 #define INC_5LIG0_AS1_MISSION_H
 
 
+
 class Mission {
 public:
     std::vector<std::vector<std::string>> data;
@@ -24,9 +25,7 @@ public:
     void setOutputFileName(std::string pFilename);
 
     void readMission();
-    void writeResults(
-
-    );
+    void writeResults();
 
 private:
     std::string missionFileName;

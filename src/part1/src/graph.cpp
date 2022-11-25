@@ -4,7 +4,7 @@
 #include <iostream>
 
 #include "../inc/graph.h"
-
+#include <cmath>
 /**
  * Construct graph for 12 x 12 grid.
  *
@@ -13,7 +13,7 @@
 Graph::Graph() {
     for (int i = 0; i < gridWidth; i++) {
         for (int j = 0; j < gridWidth; j++) {
-            int l = i * gridWidth + j;
+            int l = toVertexNumber(i, j);
 
             // Inner diagonal
             if(j>0) {
@@ -31,22 +31,30 @@ Graph::Graph() {
 }
 
 void Graph::print() {
-    for (auto & i : adjacencyMatrix)
-    {
-        for (bool j : i)
-        {
+    for (auto & i : adjacencyMatrix) {
+        for (bool j : i) {
             std::cout << j << " ";
         }
-
         std::cout << std::endl;
     }
 }
 
 void Graph::removeVertex(int pRow, int pCol) {
-    int l = pRow * gridWidth + pCol;
+    int l = toVertexNumber(pRow, pCol);
 
     for (int i = 0; i < nVertices; i++) {
         adjacencyMatrix[l][i] = false;
         adjacencyMatrix[i][l] = false;
     }
+}
+
+std::pair<unsigned int, unsigned int> Graph::toCoordinates(int pVertexNumber) {
+    int row = floor((double) pVertexNumber/gridWidth);
+    int col = pVertexNumber % gridWidth;
+
+    return {row, col};
+}
+
+int Graph::toVertexNumber(int pRow, int pCol) {
+    return pRow * gridWidth + pCol;
 }

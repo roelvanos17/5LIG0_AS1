@@ -4,60 +4,59 @@
 #include "../inc/siteconfiguration.h"
 #include "../inc/mission.h"
 #include "../inc/graph.h"
+#include "../inc/hauler.h"
+#include "../inc/dijkstra.h"
 
 int main()
 {
+    Graph graph;
     SiteConfiguration site;
     Mission mission;
 
-    /*
-    Replace your input files location and name.
-
-    functions:
-        read_config     -> input: config file name
-                        -> output: all variables in config file
-                        NOTICE: the cordinates defined as a std::pair (look at the bellow example)
-                        example:
-                            if you want the x position of second LP:
-                                 LP_positions[1].first
-                            similarly, if you want the y position of second LP:
-                                 LP_positions[1].second
-
-
-
-        read_mission    -> input: mission file name
-                        -> output: mission for each hauler
-                        example:
-                            if you want second goal of second hauler:
-                                mission[1][1]
-                                
-        
-        write_output    -> input: scenario makespan, completion time of each hauler, elapsed time of program,
-                                     path to the final points, output file name
-                        -> output: void
-    */
     std::string inputFolder = "../../examples/";
     std::string fileIdentifier = "";
 
     site.setFileName(inputFolder + fileIdentifier + "config.txt");
-    site.readConfig();
-
     mission.setMissionFileName(inputFolder + fileIdentifier + "mission.txt");
     mission.setOutputFileName(inputFolder + fileIdentifier + "output2.txt");
+
+    site.readConfig();
     mission.readMission();
+
+    hauler hauler1 = {0, std::vector<int>()};
+    hauler hauler2 = {4, std::vector<int>()};
 
     auto tstart = std::chrono::high_resolution_clock::now();
     // ------------------------
     // Place your code here!
-    while(!mission.complete) {
-        mission.complete = true;
+    Dijkstra dijkstra(graph);
+
+    for(long unsigned int i = 0; i < mission.data[0].size(); i++) {
+        int startRow;
+        int startCol;
+
+
+
+
+
+        int goalRow = site.getPointCoordinates(UNLOADING, 1).first;
+        int goalCol = site.getPointCoordinates(UNLOADING, 1).first;
+
+
+
+        if(i == 0) {
+            startRow = site.init_haulers[0].first;
+            startCol = site.init_haulers[0].second;
+
+            dijkstra.run(
+                    graph.toVertexNumber(startRow, startCol),
+                    graph.toVertexNumber(goalRow, goalCol)
+                    );
+        } else {
+
+        }
     }
 
-    Graph graph;
-
-    graph.print();
-
-    std::cout << "SO : " << site.n_SO << "\n";
 
     // ------------------------
     auto tend = std::chrono::high_resolution_clock::now();
@@ -65,11 +64,11 @@ int main()
 
     // call the writing function here
     // example:
-    mission.completionTimes = {10, 15};
-    mission.makespan = 200;
-    mission.elapsedTime = elapsed_time;
-    mission.path = mission.data.front().front();
-
-    mission.writeResults();
+//    mission.completionTimes = {10, 15};
+//    mission.makespan = 200;
+//    mission.elapsedTime = elapsed_time;
+//    mission.path = mission.data.front().front();
+//
+//    mission.writeResults();
     return 0;
 }

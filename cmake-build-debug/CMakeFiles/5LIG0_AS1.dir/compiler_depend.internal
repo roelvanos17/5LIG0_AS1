@@ -197,6 +197,10 @@ CMakeFiles/5LIG0_AS1.dir/src/part1/src/main.cpp.o
  /usr/include/c++/11/bits/vector.tcc
  /mnt/c/Git/5LIG0_AS1/src/part1/inc/mission.h
  /mnt/c/Git/5LIG0_AS1/src/part1/inc/graph.h
+ /mnt/c/Git/5LIG0_AS1/src/part1/inc/hauler.h
+ /mnt/c/Git/5LIG0_AS1/src/part1/inc/dijkstra.h
+ /mnt/c/Git/5LIG0_AS1/src/part1/inc/hauler.h
+ /mnt/c/Git/5LIG0_AS1/src/part1/inc/graph.h
 
 CMakeFiles/5LIG0_AS1.dir/src/part1/src/mission.cpp.o
  /mnt/c/Git/5LIG0_AS1/src/part1/src/mission.cpp

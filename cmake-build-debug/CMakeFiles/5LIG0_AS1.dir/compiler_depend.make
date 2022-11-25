@@ -195,6 +195,10 @@ CMakeFiles/5LIG0_AS1.dir/src/part1/src/main.cpp.o: ../src/part1/src/main.cpp \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../src/part1/inc/mission.h \
+  ../src/part1/inc/graph.h \
+  ../src/part1/inc/hauler.h \
+  ../src/part1/inc/dijkstra.h \
+  ../src/part1/inc/hauler.h \
   ../src/part1/inc/graph.h
 
 CMakeFiles/5LIG0_AS1.dir/src/part1/src/mission.cpp.o: ../src/part1/src/mission.cpp \
@@ -578,6 +582,8 @@ CMakeFiles/5LIG0_AS1.dir/src/part1/src/siteconfiguration.cpp.o: ../src/part1/src
 
 ../src/part1/src/mission.cpp:
 
+../src/part1/inc/dijkstra.h:
+
 ../src/part1/inc/graph.h:
 
 ../src/part1/inc/mission.h:
@@ -917,6 +923,8 @@ CMakeFiles/5LIG0_AS1.dir/src/part1/src/siteconfiguration.cpp.o: ../src/part1/src
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+../src/part1/inc/hauler.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
