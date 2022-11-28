@@ -163,7 +163,7 @@ void SiteConfiguration::readConfig() {
     file.close();
 }
 
-std::pair<unsigned int, unsigned int> SiteConfiguration::getPointCoordinates(pointType type, int pPointNumber) {
+std::pair<unsigned int, unsigned int> SiteConfiguration::getPointCoordinates(pointType type, unsigned long pPointNumber) {
     unsigned int row;
     unsigned int col;
 
@@ -179,6 +179,10 @@ std::pair<unsigned int, unsigned int> SiteConfiguration::getPointCoordinates(poi
         case LOADING:
             row = LP_positions[pPointNumber - 1].first;
             col = LP_positions[pPointNumber - 1].second;
+            return {row, col};
+        case STATIC_OBJECT:
+            row = SO_positions[pPointNumber].first;
+            col = SO_positions[pPointNumber].second;
             return {row, col};
         default:
             return {0, 0};

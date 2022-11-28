@@ -12,12 +12,12 @@ class Graph {
 public:
     Graph();
     void print();
-    void removeVertex(int pCol, int pRow);
+    void removeGridCell(unsigned int pRow, unsigned int pCol);
     static const int gridWidth = 12;
     static const int nVertices = gridWidth * gridWidth;
     bool adjacencyMatrix[nVertices][nVertices]{};
     static std::pair<unsigned int, unsigned int> toCoordinates(int pVertexNumber);
-    unsigned int toVertexNumber(unsigned int pRow, unsigned int pCol);
+    static unsigned int toVertexNumber(unsigned long pRow, unsigned long pCol);
 };
 
 

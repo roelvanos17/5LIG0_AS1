@@ -12,7 +12,7 @@ class Graph {
 public:
     Graph();
     void print();
-    void removeVertex(int pCol, int pRow);
+    void removeGridCell(int pCol, int pRow);
     static const int gridWidth = 12;
     static const int nVertices = gridWidth * gridWidth;
     bool adjacencyMatrix[nVertices][nVertices]{};

@@ -30,6 +30,13 @@ int main()
     // ------------------------
     // Place your code here!
     Dijkstra dijkstra(graph);
+    for(long unsigned int i = 0; i < site.SO_positions.size(); i++) {
+        unsigned int row =  site.getPointCoordinates(STATIC_OBJECT,i).first - 1;
+        unsigned int col =  site.getPointCoordinates(STATIC_OBJECT,i).second - 1;
+
+        graph.removeGridCell(row, col);
+    }
+
     for(long unsigned int i = 0; i < mission.data[0].size(); i++) {
         unsigned int startRow;
         unsigned int startCol;
@@ -51,21 +58,15 @@ int main()
 
             // Dijkstra uses 0 - 11 rows instead of 1 - 12, so subtract 1
             dijkstra.run(
-                    graph.toVertexNumber(startRow - 1, startCol - 1),
-                    graph.toVertexNumber(goalRow - 1, goalCol - 1)
+                    Graph::toVertexNumber(startRow - 1, startCol - 1),
+                    Graph::toVertexNumber(goalRow - 1, goalCol - 1)
             );
         } else {
             dijkstra.run(
                     dijkstra.totalPath.back(),
-                    graph.toVertexNumber(goalRow - 1, goalCol - 1)
+                    Graph::toVertexNumber(goalRow - 1, goalCol - 1)
             );
         }
-
-        std::cout << "-E> : " << dijkstra.totalPath.back() << "\n";
-    }
-
-    for (int j : dijkstra.totalPath) {
-            std::cout << "-> : " << j << "\n";
     }
 
     // ------------------------

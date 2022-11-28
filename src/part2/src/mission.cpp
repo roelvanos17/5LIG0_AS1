@@ -53,7 +53,7 @@ void Mission::writeResults() {
 std::string Mission::createPathString(std::vector<int> totalPath){
     std::string totalPath2;
 
-    for(int i = 0; i < totalPath.size(); i++) {
+    for(long unsigned int i = 0; i < totalPath.size(); i++) {
         std::pair<unsigned int, unsigned int>coordinates = Graph::toCoordinates(totalPath[i]);
 
 

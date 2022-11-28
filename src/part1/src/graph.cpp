@@ -39,7 +39,7 @@ void Graph::print() {
     }
 }
 
-void Graph::removeVertex(int pRow, int pCol) {
+void Graph::removeGridCell(int pRow, int pCol) {
     int l = toVertexNumber(pRow, pCol);
 
     for (int i = 0; i < nVertices; i++) {

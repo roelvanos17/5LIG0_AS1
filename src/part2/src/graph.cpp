@@ -39,8 +39,8 @@ void Graph::print() {
     }
 }
 
-void Graph::removeVertex(int pRow, int pCol) {
-    int l = toVertexNumber(pRow, pCol);
+void Graph::removeGridCell(unsigned int pRow, unsigned int pCol) {
+    unsigned int l = toVertexNumber(pRow, pCol);
 
     for (int i = 0; i < nVertices; i++) {
         adjacencyMatrix[l][i] = false;
@@ -55,6 +55,6 @@ std::pair<unsigned int, unsigned int> Graph::toCoordinates(int pVertexNumber) {
     return {row, col};
 }
 
-unsigned int Graph::toVertexNumber(unsigned int pRow, unsigned int pCol) {
+unsigned int Graph::toVertexNumber(unsigned long pRow, unsigned long pCol) {
     return pRow * gridWidth + pCol;
 }

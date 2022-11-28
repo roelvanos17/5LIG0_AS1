@@ -69,10 +69,10 @@ void Dijkstra::updateDistances(unsigned int pClosestVertex) {
 
 
 void Dijkstra::printPath(unsigned int goalVertex) {
-    std::cout << "Distance: " << distance[goalVertex] << "\t\t";
-    std::cout << "Path: ";
+//    std::cout << "Distance: " << distance[goalVertex] << "\t\t";
+//    std::cout << "Path: ";
     printNextStep(goalVertex);
-    std::cout << "\n";
+//    std::cout << "\n";
 }
 
 
@@ -81,6 +81,6 @@ void Dijkstra::printNextStep(int pVertexNumber) {
         return;
     }
     printNextStep(origin[pVertexNumber]);
-    std::cout << pVertexNumber << " ";
+//    std::cout << pVertexNumber << " ";
     totalPath.insert(totalPath.end(), pVertexNumber);
 }

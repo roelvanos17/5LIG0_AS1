@@ -12,6 +12,7 @@ enum pointType {
     START,
     UNLOADING,
     LOADING,
+    STATIC_OBJECT,
 };
 
 class SiteConfiguration {
@@ -32,7 +33,7 @@ public:
     void setFileName(std::string pFilename);
     void readConfig();
 
-    std::pair<unsigned int, unsigned int> getPointCoordinates(pointType type, int pPointNumber);
+    std::pair<unsigned int, unsigned int> getPointCoordinates(pointType type, unsigned long pPointNumber);
 
 
 private:
