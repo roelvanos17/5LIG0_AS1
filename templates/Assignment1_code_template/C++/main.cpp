@@ -262,7 +262,7 @@ int main()
     // call the writing function here
     // example:
     // std::vector<unsigned int> completion_times{10, 15};
-    // write_output(200, completion_times, elapsed_time, "1,[11,9],[8,12],[7,11]\n2,[11,8],[8,11],[7.10]");
+     write_output(200, completion_times, elapsed_time, "1,[11,9],[8,12],[7,11]\n2,[11,8],[8,11],[7.10]");
 
     return 0;
 }

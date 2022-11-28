@@ -27,6 +27,8 @@ public:
     void readMission();
     void writeResults();
 
+    static std::string createPathString(std::vector<int> totalPath);
+
 private:
     std::string missionFileName;
     std::string outputFileName;

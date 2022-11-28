@@ -3,6 +3,7 @@
 //
 
 #include "../inc/mission.h"
+#include "../inc/graph.h"
 
 void Mission::setMissionFileName(std::string pFilename) {
     missionFileName = pFilename;
@@ -48,3 +49,18 @@ void Mission::writeResults() {
         file << path;
         file.close();
     }
+
+std::string Mission::createPathString(std::vector<int> totalPath){
+    std::string totalPath2;
+
+    for(int i = 0; i < totalPath.size(); i++) {
+        std::pair<unsigned int, unsigned int>coordinates = Graph::toCoordinates(totalPath[i]);
+
+
+        totalPath2 += std::to_string(i)
+                     + ",[" + std::to_string(coordinates.first + 1)
+                     + "," + std::to_string(coordinates.second + 1) + "]\n";
+    }
+
+    return totalPath2;
+}

@@ -13,12 +13,12 @@ int main()
     SiteConfiguration site;
     Mission mission;
 
-    std::string inputFolder = "../../examples/";
+    std::string inputFolder = "";
     std::string fileIdentifier = "";
 
     site.setFileName(inputFolder + fileIdentifier + "config.txt");
     mission.setMissionFileName(inputFolder + fileIdentifier + "mission.txt");
-    mission.setOutputFileName(inputFolder + fileIdentifier + "output2.txt");
+    mission.setOutputFileName(inputFolder + fileIdentifier + "output.txt");
 
     site.readConfig();
     mission.readMission();
@@ -67,20 +67,17 @@ int main()
     for (int j : dijkstra.totalPath) {
             std::cout << "-> : " << j << "\n";
     }
-//    }
-
 
     // ------------------------
     auto tend = std::chrono::high_resolution_clock::now();
     auto elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(tend - tstart).count();
 
     // call the writing function here
-    // example:
-//    mission.completionTimes = {10, 15};
-//    mission.makespan = 200;
-//    mission.elapsedTime = elapsed_time;
-//    mission.origin = mission.data.front().front();
-//
-//    mission.writeResults();
+    mission.completionTimes = {(unsigned int)dijkstra.totalPath.size() - 1};
+    mission.makespan = mission.completionTimes[0];
+    mission.elapsedTime = elapsed_time;
+    mission.path = Mission::createPathString(dijkstra.totalPath);
+
+    mission.writeResults();
     return 0;
 }

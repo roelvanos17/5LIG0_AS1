@@ -28,6 +28,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checks/Assignment1_sanity_check/sanity_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/checks/Assignment1_sanity_check/sanity_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Part1/0-Easy/10/1_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Part1/0-Easy/10/1_config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Part1/0-Easy/10/1_mission.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Part1/0-Easy/10/1_mission.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Part1/0-Easy/10/2_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Part1/0-Easy/10/2_config.txt" afterDir="false" />
@@ -631,6 +632,7 @@
       <change beforePath="$PROJECT_DIR$/examples/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/examples/config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/mission.txt" beforeDir="false" afterPath="$PROJECT_DIR$/examples/mission.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/examples/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/output2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/examples/output2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/1_gathering_results/linux/gather_result_cpp.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/1_gathering_results/linux/gather_result_cpp.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/1_gathering_results/linux/gather_result_python.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/1_gathering_results/linux/gather_result_python.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/1_gathering_results/linux/inputs/Part1/0-Easy/10/1_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/1_gathering_results/linux/inputs/Part1/0-Easy/10/1_config.txt" afterDir="false" />
@@ -4249,13 +4251,11 @@
       <change beforePath="$PROJECT_DIR$/scripts/2_compare_results/windows/runme.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/2_compare_results/windows/runme.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/2_compare_results/windows/sanity_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/2_compare_results/windows/sanity_check.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/2_compare_results/windows/write_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/2_compare_results/windows/write_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/inc/dijkstra.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/inc/dijkstra.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part1/inc/graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/inc/graph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/inc/mission.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/inc/mission.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part1/main" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/src/dijkstra.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/src/dijkstra.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/src/graph.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/src/graph.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part1/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part1/src/siteconfiguration.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/src/siteconfiguration.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part1/src/mission.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/part1/src/mission.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Assignment1_code_template/C++/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Assignment1_code_template/C++/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Assignment1_code_template/C++/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Assignment1_code_template/C++/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Assignment1_code_template/C++/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Assignment1_code_template/C++/.idea/vcs.xml" afterDir="false" />
@@ -4291,25 +4291,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Git/5LIG0_AS1/templates/Assignment1_code_template/C++",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Git/5LIG0_AS1/templates/Assignment1_code_template/C++&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Git\5LIG0_AS1\src\part1\src" />
@@ -4322,7 +4322,7 @@
       <recent name="C:\Git\5LIG0_AS1\src\part1" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.5LIG0_AS1">
+  <component name="RunManager" selected="Shell Script.Part1_Make">
     <configuration name="5LIG0_AS1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="5LIG0_AS1" TARGET_NAME="5LIG0_AS1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="5LIG0_AS1" RUN_TARGET_NAME="5LIG0_AS1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -4381,6 +4381,9 @@
       <workItem from="1669370190313" duration="7000" />
       <workItem from="1669370501889" duration="4000" />
       <workItem from="1669370819690" duration="13477000" />
+      <workItem from="1669629800992" duration="3249000" />
+      <workItem from="1669633135065" duration="2000" />
+      <workItem from="1669637973705" duration="96000" />
     </task>
     <servers />
   </component>
