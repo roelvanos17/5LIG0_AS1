@@ -5,12 +5,16 @@
 
 #include "../inc/dijkstra.h"
 
-Dijkstra::Dijkstra(Graph pGraph) {
+Dijkstra::Dijkstra(Graph pGraph, SiteConfiguration pSite) {
     graph = pGraph;
     visitedVertex = std::vector<bool>(Graph::nVertices);
     distance = std::vector<unsigned int>(Graph::nVertices);
     origin = std::vector<int>(Graph::nVertices);
-    totalPath.insert(totalPath.end(), 0);
+    totalPath = std::vector<std::vector<int>>(pSite.n_Hauler);
+
+    for(auto & i : totalPath) {
+        i.insert(i.end(), 0);
+    }
 }
 
 void Dijkstra::reset() {
@@ -25,10 +29,11 @@ void Dijkstra::reset() {
         }
     }
 
-    totalPath.pop_back();
+    totalPath[iteration].pop_back();
 }
 
 void Dijkstra::run(unsigned int pStartPosition, unsigned int pGoal) {
+
     startPosition = pStartPosition;
 
     reset();
@@ -89,5 +94,9 @@ void Dijkstra::printNextStep(int pVertexNumber) {
     }
     printNextStep(origin[pVertexNumber]);
 //    std::cout << pVertexNumber << " ";
-    totalPath.insert(totalPath.end(), pVertexNumber);
+    totalPath[iteration].insert(totalPath[iteration].end(), pVertexNumber);
+}
+
+void Dijkstra::setIteration(unsigned int pIteration) {
+    iteration = pIteration;
 }

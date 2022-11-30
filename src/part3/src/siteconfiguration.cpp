@@ -169,8 +169,8 @@ std::pair<unsigned int, unsigned int> SiteConfiguration::getPointCoordinates(poi
 
     switch (type) {
         case START:
-            row = init_haulers[pPointNumber - 1].first;
-            col = init_haulers[pPointNumber - 1].second;
+            row = init_haulers[pPointNumber].first;
+            col = init_haulers[pPointNumber].second;
             return {row, col};
         case UNLOADING:
             row = ULP_positions[pPointNumber - 1].first;

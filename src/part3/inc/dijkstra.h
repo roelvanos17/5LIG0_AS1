@@ -8,14 +8,18 @@
 #include <vector>
 #include "../inc/hauler.h"
 #include "../inc/graph.h"
+#include "../inc/siteconfiguration.h"
+
 
 class Dijkstra {
 public:
-    explicit Dijkstra(Graph graph);
+    explicit Dijkstra(Graph graph, SiteConfiguration pSite);
     void printPath(unsigned int goalVertex);
     void run(unsigned int pStartPosition, unsigned int pGoal);
     void reset();
-    std::vector<int> totalPath;
+    void setIteration(unsigned int pIteration);
+
+    std::vector<std::vector<int>> totalPath;
 
 private:
     int getClosestVertex();
@@ -27,6 +31,8 @@ private:
     void printNextStep(int vertexNumber);
     unsigned int startPosition{};
     std::vector<int> origin;
+    unsigned int iteration;
+
 };
 
 

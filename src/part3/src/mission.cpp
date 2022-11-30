@@ -50,17 +50,26 @@ void Mission::writeResults() {
         file.close();
     }
 
-std::string Mission::createPathString(std::vector<int> totalPath){
-    std::string totalPath2;
+std::string Mission::createPathString(std::vector<std::vector<int>> totalPath, unsigned int pMakespan){
+    std::string totalPathString;
 
-    for(long unsigned int i = 0; i < totalPath.size(); i++) {
-        std::pair<unsigned int, unsigned int>coordinates = Graph::toCoordinates(totalPath[i]);
+    for(long unsigned int i = 0; i <= pMakespan; i++) {
+        totalPathString += std::to_string(i);
 
+        for (auto & j : totalPath) {
+            std::pair<unsigned int, unsigned int> coordinates;
 
-        totalPath2 += std::to_string(i)
-                     + ",[" + std::to_string(coordinates.first + 1)
-                     + "," + std::to_string(coordinates.second + 1) + "]\n";
+            if(j.size() <= i) {
+                coordinates = Graph::toCoordinates(j.back());
+            } else {
+                coordinates = Graph::toCoordinates(j[i]);
+            }
+
+            totalPathString += ",[" + std::to_string(coordinates.first + 1)
+                               + "," + std::to_string(coordinates.second + 1) + "]";
+        }
+        totalPathString += "\n";
     }
 
-    return totalPath2;
+    return totalPathString;
 }

@@ -14,7 +14,7 @@ class Mission {
 public:
     std::vector<std::vector<std::string>> data;
 
-    unsigned int makespan;
+    unsigned int makespan = 0;
     std::vector<unsigned int> completionTimes;
     int64_t elapsedTime;
     std::string path;
@@ -27,7 +27,7 @@ public:
     void readMission();
     void writeResults();
 
-    static std::string createPathString(std::vector<int> totalPath);
+    static std::string createPathString(std::vector<std::vector<int>> totalPath, unsigned int pMakespan);
 
 private:
     std::string missionFileName;
