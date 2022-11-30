@@ -29,13 +29,14 @@ int main()
     auto tstart = std::chrono::high_resolution_clock::now();
     // ------------------------
     // Place your code here!
-    Dijkstra dijkstra(graph);
     for(long unsigned int i = 0; i < site.SO_positions.size(); i++) {
         unsigned int row =  site.getPointCoordinates(STATIC_OBJECT,i).first - 1;
         unsigned int col =  site.getPointCoordinates(STATIC_OBJECT,i).second - 1;
 
         graph.removeGridCell(row, col);
     }
+
+    Dijkstra dijkstra(graph);
 
     for(long unsigned int i = 0; i < mission.data[0].size(); i++) {
         unsigned int startRow;

@@ -58,3 +58,7 @@ std::pair<unsigned int, unsigned int> Graph::toCoordinates(int pVertexNumber) {
 unsigned int Graph::toVertexNumber(unsigned long pRow, unsigned long pCol) {
     return pRow * gridWidth + pCol;
 }
+
+//void Graph::reset() {
+//    std::copy(&openAdjacencyMatrix[0][0], &openAdjacencyMatrix[0][0] + nVertices, &adjacencyMatrix[0][0]);
+//}

@@ -36,17 +36,25 @@ void Dijkstra::run(unsigned int pStartPosition, unsigned int pGoal) {
     for (int i = 0; i < Graph::nVertices; i++) {
         int closestVertex = getClosestVertex();
 
-        visitedVertex[closestVertex] = true;
+        if(closestVertex != -1) {
+            visitedVertex[closestVertex] = true;
 
-        updateDistances(closestVertex);
+            updateDistances(closestVertex);
+        }
     }
 
     printPath(pGoal);
 }
 
+/**
+ * Function for determining the closest vertex to explore
+ *
+ * @return closestVertex to update distance
+ * @return -1 when all conncected vertices are explored
+ */
 int Dijkstra::getClosestVertex() {
     shortestDistance = INT32_MAX;
-    int closestVertex;
+    int closestVertex = -1;
 
     for (int i = 0; i < Graph::nVertices; i++) {
         if (!visitedVertex[i] && distance[i] < shortestDistance) {
@@ -54,7 +62,6 @@ int Dijkstra::getClosestVertex() {
             shortestDistance = distance[i];
         }
     }
-
     return closestVertex;
 }
 

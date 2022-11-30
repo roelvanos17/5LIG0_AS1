@@ -16,8 +16,10 @@ public:
     static const int gridWidth = 12;
     static const int nVertices = gridWidth * gridWidth;
     bool adjacencyMatrix[nVertices][nVertices]{};
+    bool openAdjacencyMatrix[nVertices][nVertices]{};
     static std::pair<unsigned int, unsigned int> toCoordinates(int pVertexNumber);
     static unsigned int toVertexNumber(unsigned long pRow, unsigned long pCol);
+    void reset();
 };
 
 
