@@ -100,3 +100,4 @@ void Dijkstra::printNextStep(int pVertexNumber) {
 void Dijkstra::setIteration(unsigned int pIteration) {
     iteration = pIteration;
 }
+

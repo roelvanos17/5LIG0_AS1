@@ -1,7 +1,7 @@
 //Quantitative values
 149	//Makespan
 149	//Mission completion time hauler 1
-61	//Application execution time (in millisecond)
+17	//Application execution time (in millisecond)
 //Path to the final points
 0,[10,12]
 1,[9,12]
