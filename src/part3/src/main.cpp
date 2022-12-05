@@ -14,7 +14,7 @@ int main()
     Mission mission;
 
     std::string inputFolder = "";
-    std::string fileIdentifier = "";
+    std::string fileIdentifier = "2_";
 
     site.setFileName(inputFolder + fileIdentifier + "config.txt");
     mission.setMissionFileName(inputFolder + fileIdentifier + "mission.txt");
@@ -76,7 +76,10 @@ int main()
         }
     }
 
-
+    if(site.n_Hauler > 1) {
+        dijkstra.removeCollisions();
+        dijkstra.removeCollisions();
+    }
 
     // ------------------------
     auto tend = std::chrono::high_resolution_clock::now();

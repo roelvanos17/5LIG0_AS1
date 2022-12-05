@@ -18,8 +18,9 @@ public:
     void run(unsigned int pStartPosition, unsigned int pGoal);
     void reset();
     void setIteration(unsigned int pIteration);
-
     std::vector<std::vector<int>> totalPath;
+    void removeCollisions();
+
 
 private:
     int getClosestVertex();
@@ -33,6 +34,9 @@ private:
     std::vector<int> origin;
     unsigned int iteration;
 
+    bool checkSwap(uint pPathId1, uint pPathId2, uint pStartIndex1, uint pStartIndex2);
+    bool checkCollision(uint pPathId1, uint pPathId2, uint pStartIndex1, uint pStartIndex2);
+    void insertWait(uint pPathId, uint pIndex);
 };
 
 

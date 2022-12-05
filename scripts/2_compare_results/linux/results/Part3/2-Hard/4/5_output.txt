@@ -3,7 +3,7 @@
 33	//Mission completion time hauler 1
 25	//Mission completion time hauler 2
 34	//Mission completion time hauler 3
-11	//Application execution time (in millisecond)
+32	//Application execution time (in millisecond)
 //Path to the final points
 0,[1,11],[6,2],[12,9]
 1,[1,10],[5,2],[11,9]

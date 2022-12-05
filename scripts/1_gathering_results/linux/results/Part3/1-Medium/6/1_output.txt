@@ -2,7 +2,7 @@
 76	//Makespan
 76	//Mission completion time hauler 1
 67	//Mission completion time hauler 2
-11	//Application execution time (in millisecond)
+34	//Application execution time (in millisecond)
 //Path to the final points
 0,[8,10],[8,3]
 1,[7,10],[8,4]
