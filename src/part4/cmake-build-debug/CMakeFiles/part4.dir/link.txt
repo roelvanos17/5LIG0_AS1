@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/part4.dir/src/dijkstra.cpp.o CMakeFiles/part4.dir/src/graph.cpp.o CMakeFiles/part4.dir/src/main.cpp.o CMakeFiles/part4.dir/src/mission.cpp.o CMakeFiles/part4.dir/src/siteconfiguration.cpp.o -o part4 

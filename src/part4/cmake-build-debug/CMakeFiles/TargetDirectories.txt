@@ -1,0 +1,3 @@
+/mnt/c/Git/5LIG0_AS1/src/part4/cmake-build-debug/CMakeFiles/part4.dir
+/mnt/c/Git/5LIG0_AS1/src/part4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Git/5LIG0_AS1/src/part4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
